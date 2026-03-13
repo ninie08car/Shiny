@@ -1,3 +1,9 @@
+.employee-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
 .employee-card {
   background: #1a1a1a;
   border-radius: 12px;
@@ -5,7 +11,9 @@
   display: flex;
   gap: 1rem;
   align-items: center;
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
   cursor: pointer;
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
