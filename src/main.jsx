@@ -8,6 +8,7 @@ import ProjectDetail from "./pages/ProjectDetail";
 import Employees from "./pages/Employees";
 import EmployeeDetail from "./pages/EmployeeDetail";
 import About from "./pages/About";
+import AboutLayout from "./pages/About/Layout";
 import AboutPresentation from "./pages/About/Presentation";
 import AboutTeam from "./pages/About/Team";
 import AboutContact from "./pages/About/Contact";
