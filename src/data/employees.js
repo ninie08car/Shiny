@@ -9,7 +9,7 @@ export const employeesData = [
     phone: "01 23 45 67 89",
     avatar: "https://i.pravatar.cc/150?img=1",
     bio: "Développeuse passionnée avec 5 ans d'expérience en React et Node.js. Spécialisée dans les applications web modernes.",
-    skills: ["React", "Node.js", "TypeScript", "PostgreSQL"]
+    skills: ["React", "Node.js", "TypeScript", "PostgreSQL"],
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ export const employeesData = [
     phone: "01 23 45 67 90",
     avatar: "https://i.pravatar.cc/150?img=12",
     bio: "Chef de projet expérimenté, coordonne les équipes de développement et assure la livraison des projets dans les délais.",
-    skills: ["Gestion de projet", "Agile", "Scrum", "Communication"]
+    skills: ["Gestion de projet", "Agile", "Scrum", "Communication"],
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ export const employeesData = [
     phone: "01 23 45 67 91",
     avatar: "https://i.pravatar.cc/150?img=5",
     bio: "Designer créative spécialisée dans l'expérience utilisateur et les interfaces modernes.",
-    skills: ["Figma", "Adobe XD", "UI Design", "Prototypage"]
+    skills: ["Figma", "Adobe XD", "UI Design", "Prototypage"],
   },
   {
     id: 4,
@@ -42,7 +42,7 @@ export const employeesData = [
     phone: "01 23 45 67 92",
     avatar: "https://i.pravatar.cc/150?img=13",
     bio: "Expert en architecture backend et bases de données. Passionné par les solutions scalables.",
-    skills: ["Python", "Django", "Docker", "AWS"]
+    skills: ["Python", "Django", "Docker", "AWS"],
   },
   {
     id: 5,
@@ -53,7 +53,7 @@ export const employeesData = [
     phone: "01 23 45 67 93",
     avatar: "https://i.pravatar.cc/150?img=9",
     bio: "Spécialiste React et animations web. Créé des interfaces utilisateur fluides et engageantes.",
-    skills: ["React", "CSS", "JavaScript", "Animations"]
+    skills: ["React", "CSS", "JavaScript", "Animations"],
   },
   {
     id: 6,
@@ -64,7 +64,7 @@ export const employeesData = [
     phone: "01 23 45 67 94",
     avatar: "https://i.pravatar.cc/150?img=14",
     bio: "Expert en automatisation et déploiement continu. Maintient l'infrastructure cloud de l'entreprise.",
-    skills: ["Kubernetes", "CI/CD", "Terraform", "Monitoring"]
+    skills: ["Kubernetes", "CI/CD", "Terraform", "Monitoring"],
   },
   {
     id: 7,
@@ -75,7 +75,7 @@ export const employeesData = [
     phone: "01 23 45 67 95",
     avatar: "https://i.pravatar.cc/150?img=10",
     bio: "Définit la vision produit et priorise les fonctionnalités en fonction des besoins utilisateurs.",
-    skills: ["Product Management", "Analyse", "Roadmap", "User Stories"]
+    skills: ["Product Management", "Analyse", "Roadmap", "User Stories"],
   },
   {
     id: 8,
@@ -86,7 +86,7 @@ export const employeesData = [
     phone: "01 23 45 67 96",
     avatar: "https://i.pravatar.cc/150?img=15",
     bio: "Développeur d'applications mobiles natives et cross-platform. Expert React Native.",
-    skills: ["React Native", "iOS", "Android", "Mobile Design"]
+    skills: ["React Native", "iOS", "Android", "Mobile Design"],
   },
   {
     id: 9,
@@ -97,7 +97,7 @@ export const employeesData = [
     phone: "01 23 45 67 97",
     avatar: "https://i.pravatar.cc/150?img=20",
     bio: "Analyse les données pour aider à la prise de décision stratégique de l'entreprise.",
-    skills: ["Python", "SQL", "Power BI", "Statistiques"]
+    skills: ["Python", "SQL", "Power BI", "Statistiques"],
   },
   {
     id: 10,
@@ -108,11 +108,22 @@ export const employeesData = [
     phone: "01 23 45 67 98",
     avatar: "https://i.pravatar.cc/150?img=11",
     bio: "Conçoit l'architecture technique des applications et guide les choix technologiques.",
-    skills: ["Architecture", "Microservices", "Cloud", "System Design"]
-  }
-]
+    skills: ["Architecture", "Microservices", "Cloud", "System Design"],
+  },
+  {
+    id: 11,
+    name: "Annie Berjou",
+    position: "Développeuse Front End",
+    department: "Technique",
+    email: "annie.berjou@sfr.fr",
+    phone: "01 23 45 67 89",
+    avatar: "https://i.pravatar.cc/150?img=1",
+    bio: "Développeuse passionnée débutante",
+    skills: ["React", "Node.js", "Html", "Css", "Javascript"],
+  },
+];
 
 // Fonction utilitaire pour récupérer un employé par son ID
 export const getEmployeeById = (id) => {
-  return employeesData.find(employee => employee.id === parseInt(id))
-}
+  return employeesData.find((employee) => employee.id === parseInt(id));
+};
