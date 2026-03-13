@@ -16,15 +16,16 @@ import "./index.css";
 createRoot(document.getElementById("root")).render(
   <StrictMode>
     <Router>
-      <Header />
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<Projects />} />
-        <Route path="/projects/:id" element={<ProjectDetail />} />
-        <Route path="/employees" element={<Employees />} />
-        <Route path="/employees/:id" element={<EmployeeDetail />} />
-        <Route path="/about" element={<About />} />
-        <Route path="*" element={<Error />} />
+        <Route element={<Layout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/:id" element={<ProjectDetail />} />
+          <Route path="/employees" element={<Employees />} />
+          <Route path="/employees/:id" element={<EmployeeDetail />} />
+          <Route path="/about" element={<About />} />
+          <Route path="*" element={<Error />} />
+        </Route>
       </Routes>
     </Router>
   </StrictMode>,
