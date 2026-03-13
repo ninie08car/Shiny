@@ -1,4 +1,4 @@
-.project-nav {
+.projects-nav {
   display: flex;
   gap: 1rem;
   margin-bottom: 2rem;
@@ -6,7 +6,7 @@
   padding-bottom: 1rem;
 }
 
-.project-link {
+.projects-link {
   padding: 0.5rem 1rem;
   color: #ccc;
   text-decoration: none;
@@ -14,7 +14,7 @@
   transition: all 0.2s ease;
 }
 
-.project-link.active {
+.projects-link.active {
   background: #646cff;
   color: #fff;
 }

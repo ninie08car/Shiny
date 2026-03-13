@@ -1,6 +1,6 @@
-import ProjectCard from '../../components/ProjectCard'
-import { projectsData } from '../../data/projects'
-import './Projects.css'
+import ProjectCard from "../../components/ProjectCard";
+import { projectsData } from "../../data/projects";
+import "./Projects.css";
 
 function Projects() {
   return (
@@ -16,7 +16,7 @@ function Projects() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Projects
+export default Projects;

@@ -1,28 +1,29 @@
 import { Outlet, NavLink } from "react-router-dom";
-import "./ProjectLayout.css";
+import "./ProjectsLayout.css";
 
-function ProjectLayout() {
+function ProjectsLayout() {
   return (
     <div className="page">
-      <nav className="project-nav">
-        <NavLink to="/project" end className="about-link">
+      <h1>Nos projets 🚀</h1>
+      <nav className="projects-nav">
+        <NavLink to="/projects" end className="projects-link">
           Tous
         </NavLink>
-        <NavLink to="/project/inprogress" className="about-link">
+        <NavLink to="/projects/in-progress" className="projects-link">
           En cours
         </NavLink>
-        <NavLink to="/project/completed" className="about-link">
+        <NavLink to="/projects/completed" className="projects-link">
           Terminés
         </NavLink>
-        <NavLink to="/project/planned" className="about-link">
+        <NavLink to="/projects/planned" className="projects-link">
           Planifiés
         </NavLink>
       </nav>
-      <div className="project-content">
+      <div className="projects-content">
         <Outlet />
       </div>
     </div>
   );
 }
 
-export default ProjectLayout;
+export default ProjectsLayout;
